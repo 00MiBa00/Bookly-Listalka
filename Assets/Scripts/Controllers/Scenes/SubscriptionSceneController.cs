@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-using IAP;
 using Views.General;
 using Views.Subscription;
 using Models;
@@ -12,8 +11,6 @@ namespace Controllers.Scenes
     public class SubscriptionSceneController : AbstractSceneController
     {
         [Space(5)] [Header("Buttons")] 
-        [SerializeField]
-        private PurchaseButton _buyBtn;
         [SerializeField] 
         private Button _nextBtn;
         [SerializeField] 
@@ -44,7 +41,6 @@ namespace Controllers.Scenes
         protected override void Subscribe()
         {
             _nextBtn.onClick.AddListener(OnPressNextBtn);
-            _buyBtn.SuccessAction += OnPurchaseSuccess;
             
             foreach (var btn in _switchPeriodBtns)
             {
@@ -55,7 +51,6 @@ namespace Controllers.Scenes
         protected override void Unsubscribe()
         {
             _nextBtn.onClick.RemoveAllListeners();
-            _buyBtn.SuccessAction -= OnPurchaseSuccess;
             
             foreach (var btn in _switchPeriodBtns)
             {
@@ -87,8 +82,6 @@ namespace Controllers.Scenes
             int index = _switchPeriodBtns.IndexOf((SwitchPeriodBtn)btn);
             
             _model.ChangeSubPeriodIndex(index);
-            
-            _buyBtn.UpdateProductInfo(index);
             
             UpdateStateSwitchPeriodBtns();
         }

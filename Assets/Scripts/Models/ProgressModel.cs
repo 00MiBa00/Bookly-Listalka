@@ -106,8 +106,6 @@ namespace Models
             string timesString = string.Join(",", timesInSeconds);
 
             PlayerPrefs.SetString(TimeListKey, timesString);
-
-            Debug.Log("Время сохранено.");
         }
     }
 }

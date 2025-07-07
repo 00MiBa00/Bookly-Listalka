@@ -111,7 +111,7 @@ namespace Controllers.Scenes
         {
             bool isVip = _model.IsVipActive;
             
-            _vipView.SetState(isVip);
+            _vipView.SetState(!isVip);
             _statusView.UpdateStatus(_model.StatusString);
 
             _progressBtn.gameObject.SetActive(isVip);

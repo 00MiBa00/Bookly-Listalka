@@ -9,7 +9,8 @@ namespace Values
 
         public static bool HasSubscription()
         {
-            if(!PlayerPrefs.HasKey(PeriodKey))
+            return true;
+            /*if(!PlayerPrefs.HasKey(PeriodKey))
             {
                 return false;
             }
@@ -17,7 +18,7 @@ namespace Values
             long temp = Convert.ToInt64(PlayerPrefs.GetString(PeriodKey));
             DateTime expirePeriod = DateTime.FromBinary(temp);
 
-            return expirePeriod > DateTime.UtcNow;
+            return expirePeriod > DateTime.UtcNow;*/
         }
 
         public static void SetWeekPeriod()

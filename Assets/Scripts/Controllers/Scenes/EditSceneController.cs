@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using Views.Create;
 using Models;
 using Enums;
-using Tools.Core.Container;
 
 namespace Controllers.Scenes
 {
@@ -193,7 +192,7 @@ namespace Controllers.Scenes
         
         private void ShowAd()
         {
-            CoreContainer.Instance.UnityAdsService.ShowAd();
+            //CoreContainer.Instance.UnityAdsService.ShowAd();
             
             CloseScene();
         }

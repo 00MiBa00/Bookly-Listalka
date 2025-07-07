@@ -23,8 +23,6 @@ namespace Views.Game
 
         public void SetGenres(List<int> indexes)
         {
-            float startPosX = -99.16f;
-            
             for (int i = 0; i < _genreImages.Count; i++)
             {
                 if (i < indexes.Count)
