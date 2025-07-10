@@ -27,9 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Reward.unity
     guid: c90d9ca01764d463f99a6d7324b18512
   - enabled: 1
-    path: Assets/Scenes/Settings.unity
-    guid: 5b42806b7ce724db082e9565c8b60474
-  - enabled: 1
     path: Assets/Scenes/Subscription.unity
     guid: 734968789643b4f6884e6106c9a72730
   m_configObjects: {}
