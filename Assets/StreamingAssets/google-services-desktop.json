@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "15209229498",
+    "project_id": "booklyball-listalka",
+    "storage_bucket": "booklyball-listalka.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15209229498:ios:01953e5db323a1d4822683",
+        "android_client_info": {
+          "package_name": "com.lkpzqsa.uionbfjxp.qwr.okn"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdTIBlBj6OJ0YmPcn_T8gke1Ze9u10PPk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
