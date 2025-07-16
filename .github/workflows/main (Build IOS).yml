@@ -141,7 +141,7 @@ jobs:
 
           IOS_BUILD_PATH: ${{ format('{0}/build/iOS', github.workspace) }}
           IOS_BUNDLE_ID: com.lkpzqsa.uionbfjxp.qwr.okn
-          APP_VERSION: "1.0.0"
+          APP_VERSION: "1.0.1"
           PROJECT_NAME: BooklyBall Listalka
         run: |
           eval "$(ssh-agent -s)"
